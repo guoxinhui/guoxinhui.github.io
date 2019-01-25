@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="初入前端，潜心学习">
+<meta name="description" content="*Js的LHS 和 RHS的含义是“赋值操作的左侧和右侧”，并非只有”=”一种赋值操作符，有些隐形赋值需要注意，比如给函数传参。12345function foo(a) &amp;#123;     		var b = a;     		return a + b; &amp;#125;  var c = foo( 2 ); ##分析：   1.声明c等于foo（2），一次LHS   2.foo()赋值给c，查找f">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS大保健">
+<meta property="og:title" content="LHS &amp;&amp; RHS(左右查询)">
 <meta property="og:url" content="http://yoursite.com/2019/01/24/JS大保健/index.html">
 <meta property="og:site_name" content="懒懒先森">
-<meta property="og:description" content="初入前端，潜心学习">
+<meta property="og:description" content="*Js的LHS 和 RHS的含义是“赋值操作的左侧和右侧”，并非只有”=”一种赋值操作符，有些隐形赋值需要注意，比如给函数传参。12345function foo(a) &amp;#123;     		var b = a;     		return a + b; &amp;#125;  var c = foo( 2 ); ##分析：   1.声明c等于foo（2），一次LHS   2.foo()赋值给c，查找f">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-24T02:45:11.272Z">
+<meta property="og:updated_time" content="2019-01-25T12:49:27.941Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS大保健">
-<meta name="twitter:description" content="初入前端，潜心学习">
+<meta name="twitter:title" content="LHS &amp;&amp; RHS(左右查询)">
+<meta name="twitter:description" content="*Js的LHS 和 RHS的含义是“赋值操作的左侧和右侧”，并非只有”=”一种赋值操作符，有些隐形赋值需要注意，比如给函数传参。12345function foo(a) &amp;#123;     		var b = a;     		return a + b; &amp;#125;  var c = foo( 2 ); ##分析：   1.声明c等于foo（2），一次LHS   2.foo()赋值给c，查找f">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>JS大保健 | 懒懒先森</title>
+  <title>LHS && RHS(左右查询) | 懒懒先森</title>
   
 
 
@@ -269,7 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JS大保健</h1>
+          <h1 class="post-title" itemprop="name headline">LHS && RHS(左右查询)</h1>
         
 
         <div class="post-meta">
@@ -319,7 +319,9 @@
       
 
       
-        
+        <p>*Js的LHS 和 RHS的含义是“赋值操作的左侧和右侧”，并非只有”=”一种赋值操作符，有些隐形赋值需要注意，比如给<a href="https://baike.baidu.com/item/参数传递/9019335" target="_blank" rel="noopener">函数传参</a>。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> foo(a) &#123;     </span><br><span class="line">		var b = a;     </span><br><span class="line">		<span class="built_in">return</span> a + b;</span><br><span class="line"> &#125;  </span><br><span class="line">var c = foo( 2 );</span><br></pre></td></tr></table></figure></p>
+<p>##分析：<br>   1.声明c等于foo（2），一次LHS<br>   2.foo()赋值给c，查找foo()，一次RHS<br>   3.传参2，形参a被赋值为2，对a，一次LHS<br>   4.声明形参b赋值为a，一次LHS<br>   5.查找a，一次RHS<br>   6.return对于a，b分别进行一次RHS</p>
+
       
     </div>
     
@@ -339,22 +341,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/01/24/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -421,7 +407,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
