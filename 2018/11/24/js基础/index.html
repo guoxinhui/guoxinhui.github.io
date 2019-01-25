@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="js基础,">
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="初入前端，潜心学习">
-<meta property="og:type" content="website">
-<meta property="og:title" content="懒懒先森">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+<meta name="description" content="*Js的LHS 和 RHS的含义是“赋值操作的左侧和右侧”，并非只有”=”一种赋值操作符，有些隐形赋值需要注意，比如给函数传参。12345function foo(a) &amp;#123;     		var b = a;     		return a + b; &amp;#125;  var c = foo( 2 ); ##分析：   1.声明c等于foo（2），一次LHS   2.foo()赋值给c，查找f">
+<meta name="keywords" content="js基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LHS &amp;&amp; RHS(左右查询)">
+<meta property="og:url" content="http://yoursite.com/2018/11/24/js基础/index.html">
 <meta property="og:site_name" content="懒懒先森">
-<meta property="og:description" content="初入前端，潜心学习">
+<meta property="og:description" content="*Js的LHS 和 RHS的含义是“赋值操作的左侧和右侧”，并非只有”=”一种赋值操作符，有些隐形赋值需要注意，比如给函数传参。12345function foo(a) &amp;#123;     		var b = a;     		return a + b; &amp;#125;  var c = foo( 2 ); ##分析：   1.声明c等于foo（2），一次LHS   2.foo()赋值给c，查找f">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-01-25T13:03:29.854Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="懒懒先森">
-<meta name="twitter:description" content="初入前端，潜心学习">
+<meta name="twitter:title" content="LHS &amp;&amp; RHS(左右查询)">
+<meta name="twitter:description" content="*Js的LHS 和 RHS的含义是“赋值操作的左侧和右侧”，并非只有”=”一种赋值操作符，有些隐形赋值需要注意，比如给函数传参。12345function foo(a) &amp;#123;     		var b = a;     		return a + b; &amp;#125;  var c = foo( 2 ); ##分析：   1.声明c等于foo（2），一次LHS   2.foo()赋值给c，查找f">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2019/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/24/js基础/">
 
 
 
 
 
-  <title>归档 | 懒懒先森</title>
+  <title>LHS && RHS(左右查询) | 懒懒先森</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -237,212 +239,148 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/24/js基础/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="guoxinhui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/theme-photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="懒懒先森">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">LHS && RHS(左右查询)</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-24T10:45:11+08:00">
+                2018-11-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 7 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/25/js基础-7/" itemprop="url">
-              
-                <span itemprop="name">未命名</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-25T20:54:29+08:00" content="2019-01-25">
-          01-25
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/25/js基础-4/" itemprop="url">
-              
-                <span itemprop="name">未命名</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-25T20:54:27+08:00" content="2019-01-25">
-          01-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/25/js基础-5/" itemprop="url">
-              
-                <span itemprop="name">未命名</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-25T20:54:24+08:00" content="2019-01-25">
-          01-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>*Js的LHS 和 RHS的含义是“赋值操作的左侧和右侧”，并非只有”=”一种赋值操作符，有些隐形赋值需要注意，比如给<a href="https://baike.baidu.com/item/参数传递/9019335" target="_blank" rel="noopener">函数传参</a>。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> foo(a) &#123;     </span><br><span class="line">		var b = a;     </span><br><span class="line">		<span class="built_in">return</span> a + b;</span><br><span class="line"> &#125;  </span><br><span class="line">var c = foo( 2 );</span><br></pre></td></tr></table></figure></p>
+<p>##分析：<br>   1.声明c等于foo（2），一次LHS<br>   2.foo()赋值给c，查找foo()，一次RHS<br>   3.传参2，形参a被赋值为2，对a，一次LHS<br>   4.声明形参b赋值为a，一次LHS<br>   5.查找a，一次RHS<br>   6.return对于a，b分别进行一次RHS</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/25/js基础-3/" itemprop="url">
-              
-                <span itemprop="name">未命名</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-25T20:54:22+08:00" content="2019-01-25">
-          01-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/25/js基础-6/" itemprop="url">
-              
-                <span itemprop="name">未命名</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-25T20:54:19+08:00" content="2019-01-25">
-          01-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/js基础/" rel="tag"># js基础</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/28/js基础-2/" rel="prev" title="词法作用域">
+                词法作用域 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -450,6 +388,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -664,6 +606,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
